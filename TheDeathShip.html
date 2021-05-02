@@ -116,7 +116,6 @@ text-decoration: none;
   border-bottom: #F9C023 2px solid;
 }
 
-
 .caption {
 opacity:0;
 transition: opacity 500ms;
@@ -127,14 +126,19 @@ width: 400px;
 height: 50px;
 }
 
-.myAudio2 {
+.Audio {
 width: 300px;
 height: 70px;
 }
-
-}
-
 </style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P36VJQZ');</script>
+<!-- End Google Tag Manager -->
 	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYF5YV126K"></script>
@@ -145,6 +149,115 @@ height: 70px;
 
   gtag('config', 'G-YYF5YV126K');
 </script>
+
+
+<!-------------------------------IDLE SCREEN ANIMATION------------------------------->
+<script>
+	//to set: checkInterval = 1000 equals one second and name of idleScene
+	
+	var checkInterval = 10000, /*10 seconds*/ idleScene = "Idle", counter = 0 ;
+	
+	
+	//timer
+	function Timer(settings)
+{
+    this.settings = settings;
+    this.timer = null;
+    this.interval = settings.interval || 1000;
+    this.timeInit = null;
+		
+    return this;
+}
+
+Timer.prototype = 
+{	
+    run: function()
+    {
+        var $this = this;
+		
+        this.settings.run();
+        this.timeInit += this.interval;
+        this.timer = setTimeout(
+            function(){$this.run(); counter++;}, 
+            this.timeInit - (new Date).getTime()
+        );
+    },
+	
+    start: function()
+    {
+        if(this.timer == null)
+        {
+            this.timeInit = (new Date).getTime();
+            this.run();
+        }
+    },
+	
+    stop: function()
+    {
+        clearTimeout(this.timer);
+        this.timer = null;
+
+    }
+}
+
+
+//initialize timer
+var idleTimer = new Timer({
+run: function(){
+idleTimer.interval = checkInterval;
+}
+});
+//end timer
+
+
+
+function myCallback(hypeDocument, element, event) {
+
+function checker(){
+function requestChecker()
+{
+
+if(counter >= 1)
+{
+idleTimer.stop();	
+counter = 0;
+window.cancelAnimationFrame(request);
+hypeDocument.showSceneNamed(idleScene, hypeDocument.kSceneTransitionCrossfade, 1.1);
+}else{
+window.requestAnimationFrame(requestChecker);
+}
+};
+
+var request = window.requestAnimationFrame(requestChecker);
+}
+
+
+function start(){
+counter = 0;
+console.log(counter)
+idleTimer.stop();	
+idleTimer.start();	
+}
+
+if(hypeDocument.currentSceneName() != idleScene)
+{
+start();
+checker();
+}
+
+window.ontouchstart = window.onclick = window.onscroll = start;
+
+return false;
+}
+
+  if("HYPE_eventListeners" in window === false) {
+    window.HYPE_eventListeners = Array();
+  }
+  window.HYPE_eventListeners.push({"type":"HypeSceneLoad", "callback":myCallback});
+</script>
+
+
+
 	
 
 	<!-- end copy -->
@@ -153,7 +266,7 @@ height: 70px;
 	<!-- copy these lines to your document: -->
 
 	<div id="thedeathship_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
-		<script type="text/javascript" charset="utf-8" src="TheDeathShip.hyperesources/thedeathship_hype_generated_script.js?63905"></script>
+		<script type="text/javascript" charset="utf-8" src="TheDeathShip.hyperesources/thedeathship_hype_generated_script.js?52907"></script>
 	</div>
 
 	<!-- end copy -->
@@ -168,6 +281,7 @@ height: 70px;
 		<div>In light of the ongoing COVID-19 pandemic, Marcus Hansen’s family generously allowed the transcription of his diary to be shared publicly.
 
 What follows is Marcus’s account of the voyage of the 40th reinforcements, beginning with his first entry on July 10, 1918 in Wellington, New Zealand.</div>
+		<div>Archival sound recording from the RNZ collection at Ngā Taonga Sound & Vision ID 244922</div>
 		<div>Private Marcus Christian Hansen
 Courtesy of the Hansen family
 </div>
@@ -180,6 +294,7 @@ The diarist, private Marcus Christian Hansen, was a member of the 40th Reinforce
 
 Hansen’s diary delivers an unprecedented firsthand account of one the most devastating outbreaks of the 1918 pandemic — an outbreak so severe that the Tahiti became known as the “death ship.” 
 </div>
+		<div>(Tap anywhere to close)</div>
 		<div>THE DISEASE SPREAD so efficiently around the globe largely with the help of troopships during WWI. Often packed over capacity with soldiers, the conditions aboard a troopship at sea were prime for outbreaks of pandemic influenza.
 
 The worst outbreak experienced by a U.S. troopship happened on the SS Leviathan in early October 1918. By the time the vessel reached its destination, roughly 2,000 of the 11,000 troops and crew (18%), had been infected.
@@ -204,9 +319,20 @@ Courtesy of Masterton Library and Archives
 </div>
 		<div> PREFACE</div>
 		<div>Amidst the 1918 pandemic, a young soldier’s diary carefully chronicles the ill-fated voyage of New Zealand’s 40th reinforcements and the deadly outbreak aboard HMNZT Tahiti</div>
+		<div>Interviewer:
+"Lieutenant D.C. Low, who was assistant medical officer onboard the New Zealand transport, Tahiti. Tahiti left Wellington on the 10 of July, 1918. Now during that journey, Dr. Low, when you were assistant medical officer, you had an outbreak of influenza, a quite serious one. I wonder if you'd tell me the story?
+
+Dr. Low:
+"Yes, well this started just after we left Freetown. In all I should we must have had more than 1,000 cases of influenza on this ship, out of troops in complement probably about 1,500. 
+
+There were questions asked in Parliament about sickness on this ship. Why? Were the medical officers efficient? Were the stores sufficient? Were there sufficient drugs onboard?
+
+But shortly after that the epidemic struck New Zealand and the disaster in this country minimized the other the one and it was forgotten."
+</div>
 		<div>Select a chapter below to learn more about the journey of HMNZT Tahiti.</div>
 		<div>Use the arrows or swipe up and down to navigate
 </div>
+		<div></div>
 		<div>The influenza virus responsible for the 1918 pandemic, commonly referred to as the ‘Spanish Flu,’ followed the paths of its human carriers.</div>
 		<div>Swipe up or tap
 arrows to navigate.</div>
@@ -222,7 +348,6 @@ No leave was given but a number were told off to get any articles required by th
 
 Private Hansen's position in the military band landed him and his fellow musicians the fortune of a few hours' leave. One can imagine the jealousy felt by the rest of the troops felt after hearing of the band's outing in Albany.
 </div>
-		<div>(Tap anywhere to close)</div>
 		<div>The SS Tahiti:
 
 Built in Scotland in 1904 as the RMS Port Kingston, the 7.6-ton, two-masted screw steamer was purchased in 1911 by the Union Steamship Company of New Zealand, and rechristened the SS Tahiti.
@@ -282,7 +407,7 @@ These magazines were not published until several weeks into the trip to allow fo
 </div>
 		<div>The next few days saw much calmer seas. 
 
-Life aboard Tahiti began to fall into routine, with a few challenges along the way. Washing and shaving proved especially difficult due to the constant swells of the ship. 
+Life aboard the Tahiti began to fall into routine, with a few challenges along the way. Washing and shaving proved especially difficult due to the constant swells of the ship. 
 
 Anticipation among the troops began to build for their first stop — Albany, Western Australia.
 </div>
@@ -770,17 +895,19 @@ This speaks for itself in face of all the deaths on board from sickness and lack
 </div>
 		<div>Entry #60
 </div>
+		<div>Entry #62
+</div>
 		<div>Entry #56
 </div>
 		<div>Listen to Dr. D.C. Low speak about the medical staff aboard the Tahiti:
 </div>
-		<div>Entry #62
-</div>
 		<div>HMNZT Tahiti's hospital</div>
-		<div>"This disease was very like an ordinary influenza — only very much more severe — with a very severe headache, shivering, high temperatures, and very often delirium. And one or two people went overboard under these conditions."
+		<div></div>
+		<div>""Drugs of course ran out in two days. And whatever was left we put into a bucket, mixed it up with water, and gave a dose of this mixture to whoever reported sick.
+
+The firemen and crew were affected, so the rule was made after consultation with the Commanding Officer that anybody who had a temperature of 102 and over was allowed to lay on the deck. And anybody with just below 102 had to work, otherwise the ship couldn't go on."
 
 Archival sound recording from the RNZ collection at Ngā Taonga Sound & Vision ID 244922</div>
-		<div></div>
 		<div>Fine again with a shower or two and a stiff breeze blowing. Much cooler now and sea a bit choppy this morning. 
 
 More deaths and burials, total now 42. A crying shame but it is only to be expected when human beings are herded together the way they have been on this boat. We have not had a fair deal at all. One of the Officers, one of the crew and one of ship’s engineers are included in today’s list of dead. 
@@ -865,6 +992,9 @@ The strange thing about this sickness is that the big strong men seem to get it 
 Today was mess orderly again. Was also able to eat a bit today and feel much better.
 </div>
 		<div></div>
+		<div>"This disease was very like an ordinary influenza — only very much more severe — with a very severe headache, shivering, high temperatures, and very often delirium. And one or two people went overboard under these conditions."
+
+Archival sound recording from the RNZ collection at Ngā Taonga Sound & Vision ID 244922</div>
 		<div>Thursday 29 August</div>
 		<div>Fine, strong breeze most of the day and sea choppy. More burials again, total this morning was 59. Our Coy has lost 5. I suppose at the rate we are going we will lose about 100. 
 
@@ -933,6 +1063,7 @@ The second wave of the 1918 pandemic would go on to claim millions of lives. The
 Marcus Hansen survived his bout with the virus and married his fiancée Vera Halfyard upon his return on December 29, 1918. The Hansens would have three children. Marcus resumed his employment in the postal service in New Zealand, where he remained until his death in 1963.
 </div>
 		<div> PART III: A STRICKEN SHIP</div>
+		<div>IDLE ANIMATION</div>
 
 	</div>
 
