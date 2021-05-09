@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="789" viewBox="0 0 9 789">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666668;
+      }
+
+      .cls-2 {
+        fill: #434344;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <circle class="cls-1" cx="4.5" cy="148.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="178.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="208.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="238.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="268.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="298.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="328.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="358.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="388.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="418.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="448.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="478.409" r="4.5"/>
+        <circle class="cls-1" cx="4.5" cy="508.409" r="4.5"/>
+      </g>
+      <rect class="cls-2" width="9" height="124.5" rx="4.5"/>
+      <rect class="cls-2" y="670.364" width="9" height="118.636" rx="4.5"/>
+      <rect class="cls-2" y="532.318" width="9" height="118.636" rx="4.5"/>
+    </g>
+  </g>
+</svg>
