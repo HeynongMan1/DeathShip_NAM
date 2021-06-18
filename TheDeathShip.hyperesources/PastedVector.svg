@@ -1,54 +1,25 @@
-<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px"
-	 height="977px" viewBox="0 0 9 977" style="overflow:visible;enable-background:new 0 0 9 977;" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
+	 height="50px" viewBox="0 0 20 50" style="overflow:visible;enable-background:new 0 0 20 50;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#4E4E50;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FE4733;}
+	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <defs>
 </defs>
-<circle class="st0" cx="4.5" cy="4.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="26.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="48.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="70.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="92.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="114.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="136.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="158.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="180.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="202.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="224.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="246.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="268.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="290.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="312.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="334.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="356.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="378.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="400.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="422.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="444.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="466.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="488.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="510.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="532.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="554.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="576.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="598.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="620.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="642.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="664.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="686.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="708.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="730.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="752.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="774.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="796.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="818.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="840.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="862.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="884.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="906.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="928.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="950.5" r="4.5"/>
-<circle class="st0" cx="4.5" cy="972.5" r="4.5"/>
+<path class="st0" d="M10,0L10,0C4.477,0,0,4.477,0,10l0,30c0,5.523,4.477,10,10,10h0c5.523,0,10-4.477,10-10V10
+	C20,4.477,15.523,0,10,0z"/>
+<g>
+	<g>
+		<line class="st1" x1="10" y1="8.833" x2="10" y2="41.167"/>
+		<g>
+			<polygon points="5.91,12.147 6.643,12.829 9.999,9.217 13.356,12.829 14.089,12.147 9.999,7.749 			"/>
+		</g>
+		<g>
+			<polygon points="5.91,37.853 6.643,37.171 9.999,40.783 13.356,37.171 14.089,37.853 9.999,42.251 			"/>
+		</g>
+	</g>
+</g>
+<rect x="5.191" y="18.261" class="st0" width="9.618" height="13.478"/>
+<rect x="2.452" y="24.201" class="st0" width="14.375" height="1.597"/>
 </svg>
